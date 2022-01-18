@@ -38,7 +38,7 @@ class MagicCommand extends Command
 
             foreach($numbers as $key => $number) {
 
-                if ($key >= 26) continue;
+                if ($key >= 26) break;
 
                 for($i = 0; $i < $number; $i++) {
                     $output .= chr($key + 65);
